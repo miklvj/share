@@ -240,7 +240,7 @@ df['total_rating_div'] = rating
 
 
 app = dash.Dash()
-
+server = app.server
 
 
 
