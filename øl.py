@@ -4,6 +4,8 @@ Created on Thu Dec  1 19:57:02 2022
 
 @author: mikke
 """
+
+
 import pandas as pd
 import plotly
 import plotly.express as px
@@ -135,6 +137,8 @@ df.columns = columns_names #APPEND THE COLUMN NAMES^
 
 
 
+
+
 '''
 MODIFY DF
 '''
@@ -169,11 +173,11 @@ df['smag_miks_div'] = smag_miks_div
 ems_smag = []
 tejl_smag = []
 miks_smag = []
-for i in df['smag_ems_div'].values:
+for i in df['smag_ems'].values:
     ems_smag.append(i)
-for i in df['smag_tejl_div'].values:
+for i in df['smag_tejl'].values:
     tejl_smag.append(i)
-for i in df['smag_miks_div'].values:
+for i in df['smag_miks'].values:
     miks_smag.append(i)
 smag_total = list(map(sum, zip(ems_smag,tejl_smag,miks_smag)))
 df['smag_total'] = smag_total
@@ -239,8 +243,27 @@ df['total_rating_div'] = rating
 
 
 
+
+
+'''
+RUN DASH
+'''
+
+
+
+
+
 app = dash.Dash()
 server = app.server
+
+
+
+
+'''
+LAYOUT
+'''
+
+
 
 
 
@@ -272,23 +295,27 @@ app.layout = html.Div([
 
 
 
+'''
+CALLBACK
+'''
+
+
+
 
 
 @app.callback(
     Output(component_id ='graf_smag', component_property='figure'),
     [Input(component_id='dropdown', component_property='value')])
 
-#create 1 dataset for smag, duft og helhedsoplevelse
-#use an if statement to determin the graph 
 def update_graph(dropdown_value):
    
     if dropdown_value == 'Smag':
         df.sort_values(by=['smag_total'], inplace=True) 
         fig = go.Figure(
             data=[
-                go.Bar(name='Tejlmand', x=df['navn'], y=df['smag_tejl_div']),
-                go.Bar(name='Emma', x=df['navn'], y=df['smag_ems_div']),
-                go.Bar(name='Mikkel', x=df['navn'], y=df['smag_miks_div'])
+                go.Bar(name='Tejlmand', x=df['navn'], y=df['smag_tejl']),
+                go.Bar(name='Emma', x=df['navn'], y=df['smag_ems']),
+                go.Bar(name='Mikkel', x=df['navn'], y=df['smag_miks'])
                 ])
         
     elif dropdown_value == 'Duft':
@@ -326,9 +353,6 @@ def update_graph(dropdown_value):
 
 
 
-
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
 
