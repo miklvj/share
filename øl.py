@@ -28,37 +28,37 @@ PLUG IN STATS
 
 
 
-navn = ['Punk IPA', 'Aarhus Tribute', 'Santa Gose', 'Red Noses', 'Christmas Ale', 'Yule Juice', 'Yuzual Suspect', 'Hazy Jane', 'No.5 Valnød', 'Snug as a Bug in a Rug', 'Santas Hoppy Helpers']
-bryggeri = ['Brewdog', 'Aarhus Bryghus', 'To Øl', 'Anarkist', 'Jacobsen', 'Amager Bryghus', 'To Øl', 'Brewdog', 'Ærø Bryghus', 'Salikatt', 'Mikkeller']
-type = ['IPA', 'Barleywine', 'Sour', 'Red Ale', 'Red Ale', 'IPA', 'Sour', 'IPA', 'Bock', 'NEIPA', 'IPA']
-procent = [5.4, 9.0, 4.0, 5.5, 7.5, 6.5, 4.5, 5.0, 7.0, 8.0, 6.0]
+navn = ['Punk IPA', 'Aarhus Tribute', 'Santa Gose', 'Red Noses', 'Christmas Ale', 'Yule Juice', 'Yuzual Suspect', 'Hazy Jane', 'No.5 Valnød', 'Snug as a Bug in a Rug', 'Santas Hoppy Helpers', 'London Lager']
+bryggeri = ['Brewdog', 'Aarhus Bryghus', 'To Øl', 'Anarkist', 'Jacobsen', 'Amager Bryghus', 'To Øl', 'Brewdog', 'Ærø Bryghus', 'Salikatt', 'Mikkeller', 'Poppels']
+type = ['IPA', 'Barleywine', 'Sour', 'Red Ale', 'Red Ale', 'IPA', 'Sour', 'IPA', 'Bock', 'NEIPA', 'IPA', 'Lager']
+procent = [5.4, 9.0, 4.0, 5.5, 7.5, 6.5, 4.5, 5.0, 7.0, 8.0, 6.0, 5.0]
 
 
 '''
 Ems
 '''
 
-duft_ems = [4, 4, 5, 2, 4, 5, 1, 3, 2, 4, 3]
-smag_ems = [8, 6, 9, 4, 7, 6, 6, 6, 5, 8, 7]
-helhedsoplevelse_ems = [4, 3, 5, 2, 3, 4, 4, 3, 2, 4, 4]
+duft_ems = [4, 4, 5, 2, 4, 5, 1, 3, 2, 4, 3, 3]
+smag_ems = [8, 6, 9, 4, 7, 6, 6, 6, 5, 8, 7, 6]
+helhedsoplevelse_ems = [4, 3, 5, 2, 3, 4, 4, 3, 2, 4, 4, 3]
 
 
 '''
 Tejl
 '''
 
-duft_tejl = [5, 2, 4, 2, 4, 4, 1, 2, 4, 5, 5]
-smag_tejl = [7, 9, 7, 5, 7, 6, 8, 6, 6, 9, 8]
-helhedsoplevelse_tejl = [4, 3, 4, 3, 4, 2, 4, 3, 3, 5, 5]
+duft_tejl = [5, 2, 4, 2, 4, 4, 1, 2, 4, 5, 5, 3]
+smag_tejl = [7, 9, 7, 5, 7, 6, 8, 6, 6, 9, 8, 5]
+helhedsoplevelse_tejl = [4, 3, 4, 3, 4, 2, 4, 3, 3, 5, 5, 3]
 
 
 '''
 Miks
 '''
 
-duft_miks = [3, 4, 4, 2, 3, 5, 3, 2, 3, 4, 3]
-smag_miks = [7, 6, 9, 4, 6, 7, 9, 5, 4, 7, 7]
-helhedsoplevelse_miks = [3, 3, 5, 2, 3, 3, 5, 3, 2, 4, 4]
+duft_miks = [3, 4, 4, 2, 3, 5, 3, 2, 3, 4, 3, 4]
+smag_miks = [7, 6, 9, 4, 6, 7, 9, 5, 4, 7, 7, 7]
+helhedsoplevelse_miks = [3, 3, 5, 2, 3, 3, 5, 3, 2, 4, 4, 4]
 
 
 
