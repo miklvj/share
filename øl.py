@@ -30,7 +30,7 @@ PLUG IN STATS
 
 navn = ['Punk IPA', 'Aarhus Tribute', 'Santa Gose', 'Red Noses', 'Christmas Ale', 'Yule Juice', 'Yuzual Suspect', 'Hazy Jane', 'No.5 Valnød', 'Snug as a Bug in a Rug', 'Santas Hoppy Helpers', 'London Lager', 'Luxus Jule Bryg']
 bryggeri = ['Brewdog', 'Aarhus Bryghus', 'To Øl', 'Anarkist', 'Jacobsen', 'Amager Bryghus', 'To Øl', 'Brewdog', 'Ærø Bryghus', 'Salikatt', 'Mikkeller', 'Poppels', 'Godt Bryg']
-type = ['IPA', 'Barleywine', 'Sour', 'Red Ale', 'Red Ale', 'IPA', 'Sour', 'IPA', 'Bock', 'NEIPA', 'IPA', 'Lager', 'Pilsner]
+type = ['IPA', 'Barleywine', 'Sour', 'Red Ale', 'Red Ale', 'IPA', 'Sour', 'IPA', 'Bock', 'NEIPA', 'IPA', 'Lager', 'Pilsner']
 procent = [5.4, 9.0, 4.0, 5.5, 7.5, 6.5, 4.5, 5.0, 7.0, 8.0, 6.0, 5.0, 7.0]
 
 
