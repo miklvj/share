@@ -14,7 +14,6 @@ import dash
 from dash import html
 from dash import dcc
 from dash.dependencies import Input, Output
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 
@@ -338,26 +337,6 @@ app.layout = html.Div([
     html.Br(),
 
 
-html.Div('Choose the X best rated beers:'),
-
-
-    html.Br(),
-    html.Br(),
-    
-dcc.Input(
-     id='Input_number_players',
-     type = "number",
-     min=1, max=len(list_wc), step=1,
-     placeholder = 'Insert number between 1 and 24',
-     value ='',
-     style={'width': '25%', 'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block','textAlign': 'center'}),
-  
-  html.Br(),
-    html.Br(),
-    html.Br(),
-
-html.Img(id='output-graph'),
-
     ],
     
     style={'textAlign': 'center'})
@@ -565,34 +544,6 @@ def update_graph(dropdown_value):
 
     return fig
 
-
-
-@app.callback(
-    Output(component_id='output-graph', component_property='src'),
-    Input(component_id='Input_number_players', component_property='value'))
-
-def wc(number):
-    if not number:
-        word_cloud = WordCloud(background_color="White",
-                               width=700, height=700,
-                               max_words=len(list_wc),
-                               colormap = "plasma").generate_from_frequencies(dict(list_wc))
-    else:
-        if number > len(list_wc):
-            word_cloud = WordCloud(background_color="White",
-                                   width=700, height=700,
-                                   max_words=len(list_wc),
-                                   colormap = "plasma").generate_from_frequencies(dict(list_wc))
-        else:
-            word_cloud = WordCloud(background_color="White",
-                                   width=700, height=700,
-                                   max_words=len(list_wc),
-                                   colormap = "plasma").generate_from_frequencies(dict(list_wc[0:number]))
-        
-    plt.imshow(word_cloud, interpolation='bilinear')
-    plt.axis("off")
-    
-    return word_cloud.to_image()
 
 
 
